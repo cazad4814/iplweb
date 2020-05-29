@@ -1,7 +1,106 @@
-<html>
-    <head>
-        </head>
-        <body>
-            <h1>hello ok </h1>
-        </body>
-</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>
+        IPL visualization
+    </title>
+   
+</head>
+
+<body>
+    <h1>IPL Dataset visualization</h1>
+   
+    <div 
+    style="width: 1130px; height: 50px; margin: 0 auto; margin-top: 20px;margin-bottom: 30px; "
+  >
+    <h3>
+      <b>Select the season to print Top 10 Economic Bowlwers</b>
+    </h3>
+    <select id="seasons2" name="seasons2">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
+    <button type="button" onclick="showData1()">Show</button>
+  </div>
+    <div id="top_economical _bowlers" class="a" style="width: 1130px; height: 500px; margin: 50px auto 0px; overflow: hidden;"></div>
+    <div id="matches-played-per-year" class="a" style="width: 1130px; height: 500px; margin: 50px auto 0px; overflow: hidden;"></div>
+    <div id="matches-won-team-year"  class="a" style="width: 1130px; height: 500px; margin: 50px auto 0px; overflow: hidden;" ></div>
+    <div 
+    style="width: 1130px; height: 50px; margin: 0 auto; margin-top: 20px; margin-bottom: 30px;"
+  >
+    <h3>
+      <b>Select the season to print Extra Run given by Each Team</b>
+    </h3>
+    <select id="seasons1" name="seasons1">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
+    <button type="button" onclick="showData()">Show</button>
+  </div>
+  <div id="extrarun_each _team" class="a" style="width: 1130px; height: 500px; margin: 50px auto 0px; overflow: hidden;"></div>
+    <div 
+    style="width: 1130px; height: 50px; margin: 0 auto; margin-top: 20px; margin-bottom: 30px; "
+  >
+    <h3>
+      <b>Select season to print Top 20  Players Shot Details</b>
+    </h3>
+    <select id="seasons3" name="seasons3">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
+    <button type="button" onclick="showData2()">Show</button>
+  </div>
+    <div id="story-player-details-season" class="a" style="width: 1130px; height: 500px; margin-bottom: 20px; margin: 50px auto 0px; overflow: hidden;"></div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+    <script src="./app.js">
+    </script>
+    <script src="./extraRun.js">
+    </script>
+  
+    <script src="./topEconomical.js">
+    </script>
+     <script src="./storyPlayer.js">
+     </script>
+</body>
