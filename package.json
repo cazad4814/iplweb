@@ -1,0 +1,22 @@
+{
+  "name": "iplweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazad4814/iplweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cazad4814/iplweb/issues"
+  },
+  "homepage": "https://github.com/cazad4814/iplweb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
