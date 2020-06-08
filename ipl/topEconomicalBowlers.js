@@ -41,10 +41,28 @@ function topeconomicalbowlers(deliveries,matches) {
   }
     
 
-res[k]=r;
+  let arr=[];
+  for(let a in r){
+    arr.push([a,r[a]]);
+  }
+  arr.sort(function(a,b){
+      return a[1]-b[1];
+  });
+  //console.log(arr);
+ let top10=arr.slice(0,10);
+ let top10Array={};
+ for(let i=0;i<top10.length;i++){
+         top10Array[[top10[i][0]]]=top10[i][1];
+ }
+
+
+
+res[k]=top10Array;
 
    }
   
+  //console.log(res);
+
     return res;
   }
     module.exports = topeconomicalbowlers;
